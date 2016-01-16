@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Zac's Stats</title>
+<link rel=stylesheet type=text/css href="{{url_for('static', filename='style.css') }}">
+
+<div class="background"></div>
+<div class="content">
+	<h1>WoW Stats</h1>
+	<li><img src="http://render-api-us.worldofwarcraft.com/static-render/us/{{ character["thumbnail"] }}"/></li>
+	<li><h2>{{ character["name"] }}</h2></li>
+	<li><h2>{{ character["realm"] }}</h2></li>
+	<li><h2>Money Earned: {{ money }}</h2></li>
+</div>

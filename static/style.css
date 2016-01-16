@@ -1,0 +1,1 @@
+body {background-image: url(http://render-api-us.worldofwarcraft.com/static-render/us/{{ character["thumbnail"] }})
