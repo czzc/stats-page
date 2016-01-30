@@ -1,0 +1,69 @@
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Open Sans";
+}
+
+h2{
+  text-align: center;
+}
+
+.wowStats{
+  background-color: #144587;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  height: 650px;
+}
+
+.wowStats_collectibles{
+  text-align: center;
+}
+
+.wowStats_collectible{
+  text-align: center;
+  width: 50%;
+}
+
+.pure-u-1{
+  text-align: center;
+}
+
+.pure-u-1-5{
+  padding-bottom: 10px;
+}
+
+.sectionImageCircle{
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.centerImg{
+	display: inline-block;
+	height: 100%;
+}
+
+#wowStats_header{
+  color: #9482C9;
+  width: 100%;
+  text-align: center;
+}
+
+#wowStats_character, #wowStats_charInfo{
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#wowStats_character{
+  padding-top: 50px;
+}
+
+#headerSpace{
+  padding: 10px 0 10px 0;
+}
+
