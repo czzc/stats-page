@@ -23,8 +23,8 @@
         <div class="pure-g">
           <div class="pure-u-10-24">
             <div id="wowStats_header">
-              <div id="wowStats_character">{{ character.title }} {{ character.name }}</div>
-              <div id="headerSpace"><img class="centerImg sectionImageCircle" src="http://render-api-us.worldofwarcraft.com/static-render/us/{{ character.thumbnail }}"/></div>
+              <div id="wowStats_character">{{ character.title }}</span></div>
+              <div id="headerSpace"><img class="centerImg sectionImageCircle" src="http://render-api-us.worldofwarcraft.com/static-render/us/{{ character.profilePic }}"/></div>
               <div id="wowStats_charInfo">Level {{ character.level }} {{ character.race }} {{ character.class }} on {{ character.realm }}</div>
             </div>
           </div>
@@ -32,16 +32,16 @@
           <div class="pure-u-14-24">
             <div class="wowStats_stats">
               <div class="noise">
-                  {{ character.name }} has achieved a total of {{ character.achievementPoints }} over the last 11 years.  {{ character.name }} also has a prized collection of 214 mounts
-                  and 214 pets.  {{ character.name }} has gained the favor of 9999 factions over the course of the 9999 quests and 9999 dungeons/raids he's completed (as well as countless hours of mob grinding).
+                  <span class="stat">{{ character.name }}</span> has achieved a total of <span class="stat">{{ character.achievements }}</span> achievement points  over the last 11 years.  <span class="stat_pronoun_up">{{ character.pronoun }}</span> also has a prized collection of <span class="stat">{{ character.mounts }}</span> mounts
+                  and <span class="stat">{{character.pets}}</span> pets.  <span class="stat">{{ character.name }}</span> has gained the favor of <span class="stat">{{ character.exaltedFactions }}</span> factions over the course of the <span class="stat">{{character.miscStats.totalQuests}}</span> quests (including dailies!) and <span class="stat">9999</span> dungeons/raids he's completed (as well as countless hours of mob grinding).
                   Some other interesting statistics include:
                   <ul>
-                    <li>9999 healthstones and 9999 soulstones used</li>
-                    <li>9999 total kills and 9999 total deaths</li>
-                    <li>9999 total fish caught</li>
-                    <li>9999 total flight paths taken</li>
-                    <li>9999 times hearthed</li>
-                    <li>9999 Garrison Missions completed</li>
+                    <li><span class="stat">{{character.miscStats.healthstonesUsed}}</span> healthstones and <span class="stat">{{character.miscStats.rezdBySoulstone}}</span> soulstones used</li>
+                    <li><span class="stat">9999</span> total kills and <span class="stat">9999</span> total deaths</li>
+                    <li><span class="stat">9999</span> total fish caught</li>
+                    <li><span class="stat">{{character.miscStats.flightPathsTaken}}</span> total flight paths taken</li>
+                    <li><span class="stat">999</span> times hearthed</li>
+                    <li><span class="stat">{{character.miscStats.garrisonMissions}}</span> Garrison Missions completed</li>
                   </ul>
                 </div>
               </div>
@@ -60,4 +60,3 @@
 
   </body>
 </html>
-
